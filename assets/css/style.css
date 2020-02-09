@@ -1,9 +1,7 @@
-.navcontainer {
-    width: 100%;
-    background-color: grey;
+.bg-ltbluegray {
+    background-color: #88a2ad;
 }
 
-.navbar {
-    margin: 0 auto;
-    width: 960px;
+.bg-dkbluegray {
+    background-color: #657780;
 }
