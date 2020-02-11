@@ -28,6 +28,7 @@ body {
     padding-top: 60px;
     height: calc (100vh - 56px) !important;
     min-width: 330px !important;
+    overflow: scroll;
 }
 
 #bio-image {
@@ -91,6 +92,12 @@ form {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+.fixed-bottom::before {
+    content: " ";
+    clear: both;
+    display: table;
 }
 
 
