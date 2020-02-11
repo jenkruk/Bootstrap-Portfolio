@@ -75,6 +75,14 @@ form {
     color: lightgrey !important;
 }
 
+.fixed-top {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+}
 
 .fixed-bottom {
     position: fixed;
@@ -83,25 +91,15 @@ form {
     right: 0;
     bottom: 0;
     left: 0;
-    top: 20px;
-    z-index: 1030;
 }
 
-.fixed-top {
-    position: fixed;
-    margin: auto;
-    width: 100%;
-    right: 0;
-    top: 0;
-    left: 0;
-    z-index: 1050;
-}
+
 
 
 @media (min-width:0px)and (max-width: 767px) {
 
     body {
-        max-height: 100vh;
+        max-height: calc (100vh-56px);
         min-width: 330px;
     }
 
@@ -109,7 +107,7 @@ form {
         position: static !important;
         margin: 0;
         bottom: 0;
-        top: 20px;
+        top: 0;
         width: 100%;
         z-index: -1;
 
