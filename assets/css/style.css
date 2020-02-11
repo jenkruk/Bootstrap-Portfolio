@@ -27,6 +27,7 @@ ul {
 body {
     padding-top: 60px;
     height: calc (100vh - 56px) !important;
+    min-width: 330px !important;
 }
 
 #bio-image {
@@ -95,8 +96,29 @@ form {
     z-index: 1050;
 }
 
-@media (min-width: 300px) {
+
+@media (min-width:0px)and (max-width: 767px) {
 
     body {
-        padding-top: 100px;
+        max-height: 100vh;
+        min-width: 330px;
     }
+
+    .fixed-bottom {
+        position: static !important;
+        margin: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+
+    }
+
+    .fixed-top {
+        position: static !important;
+        margin: 0;
+        top: 0;
+        width: 100%;
+        z-index: -2;
+    }
+
+}
