@@ -16,11 +16,13 @@ h4 {
 
 ul {
     font-family: 'Raleway', sans-serif;
+    display: inline-block;
 }
 
 .bg-ltbluegray {
     background-color: #88a2ad;
 }
+
 
 body {
     padding-top: 60px;
@@ -40,7 +42,7 @@ body {
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif display: inline-block;
 }
 
 .card-title {
@@ -55,6 +57,7 @@ p {
 
 form {
     font-family: 'Raleway', sans-serif;
+
 }
 
 .btn {
@@ -92,35 +95,8 @@ form {
     z-index: 1050;
 }
 
-.hamburger {
-    display: none;
-}
+@media (min-width: 300px) {
 
-@media (max-width: 600px) {
-    .hamburger a:not(:first-child) {
-        display: none;
+    body {
+        padding-top: 100px;
     }
-
-    .hamburger a.nalink {
-        float: right;
-        display: block;
-    }
-}
-
-@media (max-width: 600px) {
-    .hamburger.responsive {
-        position: relative;
-    }
-
-    .hamburger.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .hamburger.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
