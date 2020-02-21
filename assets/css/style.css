@@ -24,6 +24,7 @@ ul {
 }
 
 
+
 body {
     padding-top: 60px;
     height: calc (100vh - 56px) !important;
@@ -60,13 +61,31 @@ p {
     text-decoration: none;
     color: #88a2ad;
     font-size: 17px !important;
-
 }
 
 
 .card-text {
     color: grey;
     padding-left: 5px;
+}
+
+.card-img-top {
+    padding-top: 20px;
+}
+
+.card-body {
+    padding: 10px 20px 20px 20px !important;
+}
+
+.gameTitle {
+    color: #f7931e;
+}
+
+.gameTitle:hover {
+    color: #f7931e !important;
+    border: 1px solid #f7931e !important;
+    text-decoration: none;
+    font-size: 17px !important;
 }
 
 form {
@@ -105,9 +124,6 @@ form {
     bottom: 0;
     left: 0;
 }
-
-
-
 
 @media (min-width:0px)and (max-width: 767px) {
 
