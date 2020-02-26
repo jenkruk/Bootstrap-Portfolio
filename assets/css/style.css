@@ -77,16 +77,28 @@ p {
     padding: 10px 20px 20px 20px !important;
 }
 
-.gameTitle {
-    color: #f7931e;
+.treeTitle {
+    color: #00aa23;
 }
 
-.gameTitle:hover {
-    color: #f7931e !important;
-    border: 1px solid #f7931e !important;
+.treeTitle:hover {
+    color: #00aa23 !important;
+    border: 1px solid #00aa23 !important;
     text-decoration: none;
     font-size: 17px !important;
 }
+
+.crystalTitle {
+    color: #fe0d7d;
+}
+
+.crystalTitle:hover {
+    color: #fe0d7d !important;
+    border: 1px solid #fe0d7d !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
 
 form {
     font-family: 'Raleway', sans-serif;
