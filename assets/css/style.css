@@ -110,6 +110,17 @@ p {
     font-size: 17px !important;
 }
 
+.gifTitle {
+    color: #ff7007;
+}
+
+.gifTitle:hover {
+    color: #ff7007 !important;
+    border: 1px solid #ff7007 !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
 
 form {
     font-family: 'Raleway', sans-serif;
