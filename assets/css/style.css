@@ -126,12 +126,12 @@ width: 50%;
 }
 
 .houseTitle {
-    color: #097e37;
+    color: #9B6397;
 }
 
 .houseTitle:hover {
-    color: #097e37 !important;
-    border: 1px solid #097e37 !important;
+    color: #9B6397 !important;
+    border: 1px solid #9B6397 !important;
     text-decoration: none;
     font-size: 17px !important;
 }
