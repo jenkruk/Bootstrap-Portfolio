@@ -23,8 +23,6 @@ ul {
     background-color: #88a2ad;
 }
 
-
-
 body {
     padding-top: 60px;
     height: calc (100vh - 56px) !important;
@@ -46,7 +44,8 @@ body {
 }
 
 p {
-    font-family: 'Raleway', sans-serif display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
 }
 
 .card-title {
@@ -122,6 +121,22 @@ p {
 }
 
 
+.home {
+width: 50%;
+}
+
+.houseTitle {
+    color: #097e37;
+}
+
+.houseTitle:hover {
+    color: #097e37 !important;
+    border: 1px solid #097e37 !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+
 form {
     font-family: 'Raleway', sans-serif;
 
@@ -184,4 +199,65 @@ form {
         z-index: -2;
     }
 
+}
+
+.clock {
+    color: #657780;
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 3.75vh;
+    margin-bottom: 4vh;
+    font-size: 4rem;
+}
+
+.clock div::after {
+    display: block;
+    font-size: .2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#hours::after {
+    content: "hours";
+}
+
+#minutes::after {
+    content: "minutes";
+}
+
+#seconds::after {
+    content: "seconds";
+}
+
+.clock .hide {
+    position: absolute;
+    transform-origin: 50% 0;
+    animation: hide .5s ease-in-out forwards;
+}
+
+@keyframes hide {
+    0% {
+        transform: scale(1,1) translateY(0);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.clock .show {
+    transform-origin: 50% 0;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
