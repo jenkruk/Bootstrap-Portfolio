@@ -121,10 +121,6 @@ p {
 }
 
 
-.home {
-width: 50%;
-}
-
 .houseTitle {
     color: #9B6397;
 }
@@ -134,6 +130,7 @@ width: 50%;
     border: 1px solid #9B6397 !important;
     text-decoration: none;
     font-size: 17px !important;
+
 }
 
 
@@ -156,6 +153,15 @@ form {
     color: lightgrey !important;
 }
 
+#message::placeholder {
+    visibility: hidden;
+    color: steelblue !important;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+
 .fixed-top {
     position: fixed;
     margin: auto;
@@ -174,44 +180,17 @@ form {
     left: 0;
 }
 
-@media (min-width:0px)and (max-width: 767px) {
-
-    body {
-        max-height: calc (100vh-56px);
-        min-width: 330px;
-    }
-
-    .fixed-bottom {
-        position: static !important;
-        margin: 0;
-        bottom: 0;
-        top: 0;
-        width: 100%;
-        z-index: -1;
-
-    }
-
-    .fixed-top {
-        position: static !important;
-        margin: 0;
-        top: 0;
-        width: 100%;
-        z-index: -2;
-    }
-
-}
-
 .clock {
     color: #657780;
     font-family: 'Open Sans Condensed', sans-serif;
-    width: 60%;
+    width: 30%;
     text-align: center;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
-    margin-top: 3.75vh;
-    margin-bottom: 4vh;
-    font-size: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 4.5rem;
 }
 
 .clock div::after {
@@ -260,4 +239,31 @@ form {
     100% {
         opacity: 1;
     }
+}
+
+@media (min-width:0px)and (max-width: 767px) {
+
+    body {
+        max-height: calc (100vh-56px);
+        min-width: 330px;
+    }
+
+    .fixed-bottom {
+        position: static !important;
+        margin: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+
+    }
+
+    .fixed-top {
+        position: static !important;
+        margin: 0;
+        top: 0;
+        width: 100%;
+        z-index: -2;
+    }
+
 }

@@ -1,4 +1,4 @@
-
+// CLOCK FOR TRAIN SCHEDULER PORTFOLIO IMAGE using Vanilla Javascript
 var hours = moment().format("h");
 var minutes = moment().format("mm");
 var seconds = moment().format("ss");
@@ -36,3 +36,14 @@ function updateHtml(id, value) {
 }
 
 currentTime();
+
+// END CLOCK 
+
+// BEGIN SUCCESS MESSAGE FOR SENT EMAILS ON CONTACT PAGE using jQuery
+
+$(document).ready(); {
+
+    $("form .form-group textarea placeholder").hide();
+
+
+};
