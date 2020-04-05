@@ -219,7 +219,18 @@ form {
 .btn {
     color: whitesmoke !important;
     background-color: #88a2ad !important;
+}
+.btn:hover{
+    font-size: 1.05rem;
+}
 
+.btn:active {
+    font-size: 1rem;
+}
+
+/* NETLIFY HONEYPOT */
+.hidden {
+    visibility: hidden;
 }
 
 ::placeholder {
