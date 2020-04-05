@@ -1,19 +1,24 @@
+
+/* MY NAME & PAGE TITLES */
 h1,
 h4 {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+/* MY NAME */
 h1 {
     font-size: 2.5rem !important;
     color: white;
     font-weight: bolder !important;
 }
 
+/* PAGE TITLES */
 h4 {
     color: #657780;
     font-size: 1.75rem !important;
 }
 
+/* HEADER & NAV BAR LINKS */
 ul {
     font-family: 'Raleway', sans-serif;
     display: inline-block;
@@ -23,6 +28,16 @@ ul {
     background-color: #88a2ad;
 }
 
+.fixed-top {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+
+/* ABOUT/INDEX PAGE */
 body {
     padding-top: 60px;
     height: calc (100vh - 56px) !important;
@@ -48,6 +63,7 @@ p {
     display: inline-block;
 }
 
+/* PORTFOLIO PAGE */
 .card-title {
     color: #88a2ad;
     font-family: 'Raleway', sans-serif;
@@ -61,7 +77,6 @@ p {
     color: #88a2ad;
     font-size: 17px !important;
 }
-
 
 .card-text {
     color: grey;
@@ -120,7 +135,6 @@ p {
     font-size: 17px !important;
 }
 
-
 .houseTitle {
     color: #9B6397;
 }
@@ -133,53 +147,7 @@ p {
 
 }
 
-
-form {
-    font-family: 'Raleway', sans-serif;
-
-}
-
-.btn {
-    color: whitesmoke !important;
-    background-color: #88a2ad !important;
-
-}
-
-.bg-dkbluegray {
-    background-color: #657780;
-}
-
-::placeholder {
-    color: lightgrey !important;
-}
-
-#message::placeholder {
-    visibility: hidden;
-    color: steelblue !important;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 5rem;
-}
-
-.fixed-top {
-    position: fixed;
-    margin: auto;
-    width: 100%;
-    right: 0;
-    top: 0;
-    left: 0;
-}
-
-.fixed-bottom {
-    position: fixed;
-    margin: auto;
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
+/* CLOCK FOR TRAIN SCHEDULER / PORTFOLIO PAGE */
 .clock {
     color: #657780;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -241,6 +209,46 @@ form {
     }
 }
 
+/* CONTACT PAGE */
+
+form {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.btn {
+    color: whitesmoke !important;
+    background-color: #88a2ad !important;
+
+}
+
+::placeholder {
+    color: lightgrey !important;
+}
+
+#message::placeholder {
+    color: steelblue !important;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+/* FOOTER */
+.bg-dkbluegray {
+    background-color: #657780;
+}
+
+.fixed-bottom {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* MEDIA QUERY */
 @media (min-width:0px)and (max-width: 767px) {
 
     body {
@@ -265,5 +273,4 @@ form {
         width: 100%;
         z-index: -2;
     }
-
 }

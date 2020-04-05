@@ -47,21 +47,25 @@
             <hr>
             <div class="row">
                 <div class="col-12">
-                    <form method="POST" action="https://script.google.com/macros/s/AKfycbwnaqVcArYAVHK9SY3u39ClLsZ4VSY9-rzfzyKF/exec">
-                        <div class="form-group">
+                    <form name="contact" action="POST" data-netlify="true">
+                        <div class="field">
                             <label for="label">Name</label>
-                            <input type="name" class="form-control" id="name" name="name" placeholder="Enter name">
+                            <input type="text" class="form-control"  name="name" placeholder="Enter name">
                         </div>
-                        <div class="form-group">
-                            <label for="emailAddress">Email address</label>
-                            <input type="email" class="form-control" id="email" name = "email" placeholder="Enter email">
+                        <div class="field">
+                            <label class="mt-3" for="emailAddress">Email address</label>
+                            <input type="email" class="form-control" name = "email" placeholder="Enter email">
                         </div>
-                        <div class="form-group">
-                            <label for="textarea">Message</label>
-                            <textarea name="message" id="message" class="form-control textArea" cols="30" rows="10" placeholder="Success! Your message has been sent."></textarea>
+                        <div class="field">
+                            <div
+                            data-netlify-recaptcha="true"></div>
+                        </div>
+                        <div class="field">
+                            <label for="textarea" class="mt-3">Message</label>
+                            <textarea name="message" class="form-control textArea" cols="30" rows="10" placeholder="Success! Your message has been sent."></textarea>
                         </div>
 
-                        <button type="submit" class="btn">Submit</button>
+                        <button type="submit" class="btn mt-3">Submit</button>
                     </form>
                 </div>
             </div>
