@@ -13,6 +13,7 @@ h1 {
 }
 
 /* PAGE TITLES */
+h2,
 h4 {
     color: #657780;
     font-size: 1.75rem !important;
@@ -213,37 +214,28 @@ p {
 
 form {
     font-family: 'Raleway', sans-serif;
-
 }
 
-.btn {
-    color: whitesmoke !important;
-    background-color: #88a2ad !important;
-}
-.btn:hover{
-    font-size: 1.05rem;
-}
-
-.btn:active {
-    font-size: 1rem;
-}
-
-/* NETLIFY HONEYPOT */
-.hidden {
-    visibility: hidden;
+.textArea {
+    border-color: lightgrey;
 }
 
 ::placeholder {
     color: lightgrey !important;
 }
 
-#message::placeholder {
-    color: steelblue !important;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 5rem;
+.button {
+    color: whitesmoke !important;
+    background-color: #88a2ad !important;
 }
+.button:hover{
+    font-size: 1.05rem;
+}
+
+.button:active {
+    font-size: 1rem;
+}
+
 
 /* FOOTER */
 .bg-dkbluegray {
