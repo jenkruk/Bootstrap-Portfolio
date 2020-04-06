@@ -13,7 +13,6 @@ h1 {
 }
 
 /* PAGE TITLES */
-h2,
 h4 {
     color: #657780;
     font-size: 1.75rem !important;
@@ -234,6 +233,19 @@ form {
 
 .button:active {
     font-size: 1rem;
+}
+
+.thankyou_message {
+    height: 50vh;
+}
+
+.thanks {
+    font-size: 1.75rem;
+    color: #88A2AD;
+}
+
+.earth {
+    border: 2px solid #CCE0E1;
 }
 
 
