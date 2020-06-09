@@ -103,12 +103,12 @@ p {
 }
 
 .crystalTitle {
-    color: #fe0d7d;
+    color: #FFC10B;
 }
 
 .crystalTitle:hover {
-    color: #fe0d7d !important;
-    border: 1px solid #fe0d7d !important;
+    color: #FFC10B !important;
+    border: 1px solid #FFC10B !important;
     text-decoration: none;
     font-size: 17px !important;
 }
@@ -144,7 +144,21 @@ p {
     border: 1px solid #9B6397 !important;
     text-decoration: none;
     font-size: 17px !important;
+}
 
+.cli {
+    color: #88a2ad;
+}
+
+.cliTitle {
+    color: #0eabd6;
+}
+
+.cliTitle:hover{
+    color: #0eabd6 !important;
+    text-decoration: none !important;
+    border: none !important;
+    font-size: .4rem !important;
 }
 
 /* CLOCK FOR TRAIN SCHEDULER / PORTFOLIO PAGE */
@@ -244,10 +258,6 @@ form {
     color: #88A2AD;
 }
 
-.earth {
-    border: 2px solid #CCE0E1;
-}
-
 
 /* FOOTER */
 .bg-dkbluegray {
@@ -289,3 +299,50 @@ form {
         z-index: -2;
     }
 }
+
+/* Contact Page Earth Graphic - media query for screens 980 and less for desktops */
+@media (min-width: 1200px)  {
+    .earth {
+        width: 60%;
+        height: relative;
+      }
+}
+
+/* Contact Page Earth Graphic - media query for screens 768 and less for ipads */
+@media (min-width: 769px) and (max-width: 991px) {
+    .emailImg {
+        display: none;
+    }
+}
+
+/* Contact Page Earth Graphic - media query for screens 768 and less for ipads */
+@media (min-width: 465px) and (max-width: 768px) {
+    .emailImg {
+        display: none;
+    }
+
+      .content {
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    .form-elements textarea {
+        width: 100%;
+    }
+}
+
+/* Contact Page Earth Graphic - media query for screens 640px and less for iphones */
+@media (max-width: 464px)  {
+    .emailImg {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        padding-left: 3%;
+    }
+
+    .form-elements textarea {
+        width: 100%;
+    }
+  }
