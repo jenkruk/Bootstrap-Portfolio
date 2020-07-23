@@ -91,6 +91,50 @@ p {
     padding: 10px 20px 20px 20px !important;
 }
 
+.booksTitle {
+    color: #ff903f;
+}
+
+.booksTitle:hover {
+    color: #ff903f !important;
+    border: 1px solid #ff903f !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.scraperTitle {
+    color: #78B244;
+}
+
+.scraperTitle:hover {
+    color: #78B244 !important;
+    border: 1px solid #78B244 !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.friendTitle {
+    color: #FFC10B;
+}
+
+.friendTitle:hover {
+    color: #FFC10B !important;
+    border: 1px solid #FFC10B !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.taskTitle {
+    color: #52abd5;
+}
+
+.taskTitle:hover {
+    color: #52abd5 !important;
+    border: 1px solid #52abd5 !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
 .treeTitle {
     color: #00aa23;
 }
@@ -240,6 +284,7 @@ form {
 .button {
     color: whitesmoke !important;
     background-color: #88a2ad !important;
+    border: none !important;
 }
 .button:hover{
     font-size: 1.05rem;
