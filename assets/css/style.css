@@ -25,7 +25,7 @@ ul {
 }
 
 .bg-ltbluegray {
-    background-color: #88a2ad;
+    background-color: #a2b5c6;
 }
 
 .fixed-top {
@@ -35,6 +35,40 @@ ul {
     right: 0;
     top: 0;
     left: 0;
+    /* background: transparent; */
+}
+
+.hover:hover {
+    font-size: 1.05rem;
+}
+
+/* Splash Page */
+
+.splashBody {
+    padding: 0 !important;
+}
+
+.splashNav {
+    padding: 0 !important;
+}
+
+.splashName {
+    color: #7D8E9E;
+}
+
+.splashText {
+    color: #7D8E9E !important;
+}
+
+.splashText:hover {
+    text-decoration: underline !important;
+    font-size: 1.05rem;
+}
+
+.splashImage {
+    width: 100vw;
+    height: 100vh !important;
+    margin-top: -56px !important;
 }
 
 /* ABOUT/INDEX PAGE */
@@ -306,7 +340,7 @@ form {
 
 /* FOOTER */
 .bg-dkbluegray {
-    background-color: #657780;
+    background-color: #7D8E9E;
 }
 
 .fixed-bottom {
