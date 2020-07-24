@@ -48,12 +48,9 @@ ul {
     padding: 0 !important;
 }
 
-.splashNav {
-    padding: 0 !important;
-}
-
 .splashName {
     color: #7D8E9E;
+    margin-top: -63vh;
 }
 
 .splashText {
@@ -67,8 +64,12 @@ ul {
 
 .splashImage {
     width: 100vw;
-    height: 100vh !important;
+    height: 107vh !important;
     margin-top: -56px !important;
+}
+
+.splashNav {
+    margin-top: 90h !important;
 }
 
 /* ABOUT/INDEX PAGE */
