@@ -1,0 +1,14 @@
+
+/* ABOUT/INDEX PAGE */
+
+#bio-image {
+    border-radius: 10%;
+    transition: transform .8s ease-in-out;
+    display: inline;
+}
+
+#bio-image:hover {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}

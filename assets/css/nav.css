@@ -1,0 +1,186 @@
+/* NAV,  GLOBAL, TITLES & CONTAINERS*/
+
+/* MY NAME & PAGE TITLES */
+h1,
+h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* MY NAME */
+h1 {
+    font-size: 2.5rem !important;
+    color: white;
+    font-weight: bolder !important;
+}
+
+/* PAGE TITLES */
+h4 {
+    color: #657780;
+    font-size: 1.75rem !important;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+}
+
+/* HEADER & NAV BAR LINKS */
+ul {
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+}
+
+.bg-ltbluegray {
+    background-color: #a2b5c6;
+}
+
+.fixed-top {
+    position: fixed;
+    width: 100%;
+}
+
+.hover:hover {
+    font-size: 1.05rem;
+}
+
+body {
+    height: calc (100vh - 56px) !important;
+    min-width: 330px !important;
+    overflow: scroll;
+}
+
+.container {
+    margin-top: 2vh;
+}
+
+.aboutContainer,
+.portfolioContainer,
+.contactContainer {
+    margin-top: 20vh !important;
+    padding-bottom: 20vh !important;
+}
+
+@media (min-width:0px)and (max-width: 767px) {
+
+    body {
+        max-height: calc (100vh-56px);
+        min-width: 330px;
+    }
+
+    .fixed-bottom {
+        position: static !important;
+        margin: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+
+    }
+
+    .fixed-top {
+        position: static !important;
+        margin: 0;
+        top: 0;
+        width: 100%;
+        z-index: -2;
+    }
+}
+
+@media (min-width: 260px) and (max-width: 450px) {
+
+    .nameLink {
+        max-width: 70%;
+    }
+
+    .aboutLink,
+    .portfolioLink,
+    .contactLink {
+        padding-left: 5vw !important;
+    }
+
+    .aboutContainer,
+    .portfolioContainer,
+    .contactContainer {
+    margin-top: 5vh !important;
+    padding-bottom: 5vh !important;
+}
+}
+
+
+@media (min-width: 451px) and (max-width: 750px) {
+
+    .nameLink {
+        padding: 0 !important;
+    }
+
+    .aboutLink,
+    .portfolioLink,
+    .contactLink {
+        padding-left: 1vw !important;
+    }
+
+    .navbar-nav {
+        font-size: .75rem;
+        width: 90%;
+        margin: 0 !important;
+    }
+
+    .hover {
+        text-align: end;
+    }
+
+    .aboutContainer,
+    .portfolioContainer,
+    .contactContainer {
+    margin-top: 4vh !important;
+    padding-bottom: 5vh !important;
+}
+
+}
+
+@media (max-height: 320px) {
+    .nameLink {
+        width: 50%;
+    }
+
+    .navbar-nav {
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 751px) and (max-width: 811px) {
+    .aboutContainer,
+    .portfolioContainer,
+    .contactContainer {
+    margin-top: 14vh !important;
+    margin-bottom: 0 !important;
+    }
+}
+
+@media (min-width: 812px) and (min-height: 375px) {
+    .aboutContainer,
+    .portfolioContainer,
+    .contactContainer {
+    margin-top: 30vh !important;
+    margin-bottom: 10vh !important;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 768px) {
+    .aboutContainer,
+    .portfolioContainer,
+    .contactContainer {
+    margin-top: 18vh !important;
+    padding-bottom: 0vh !important;
+}
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+    .aboutContainer,
+    .portfolioContainer,
+    .contactContainer {
+    margin-top: 15vh !important;
+    padding-bottom: 5vh !important;
+}
+}

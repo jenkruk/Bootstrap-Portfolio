@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/mediaQueries.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
@@ -22,25 +26,26 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-ltbluegray shadow-sm">
             <div class="container">
-                <h1 class="text-uppercase">Jennifer Kruk</h1>
-
+                <a class="nav-link nameLink" href="index.html">
+                <h1 class="text-uppercase name">Jennifer Kruk</h1>
+                </a>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link hover" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link hover" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link hover aboutLink" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover" href="contact.html">Contact</a>
+                        <a class="nav-link active hover portfolioLink" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover" href="https://github.com/jenkruk" target="_blank">
+                        <a class="nav-link hover contactLink" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover githubLink" href="https://github.com/jenkruk" target="_blank">
                             <img src="./assets/images/github.png" alt="github icon">
                             Github</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover" href="https://www.linkedin.com/in/jennifer-k-97808519b/" target="_blank">
+                        <a class="nav-link hover linkedInLink" href="https://www.linkedin.com/in/jenkruk/" target="_blank">
                             <img src="./assets/images/linkedin.png" alt="linkedin icon">
                             LinkedIn</a>
                     </li>
@@ -50,15 +55,15 @@
         </nav>
     </header>
 
+    <div class="container portfolioContainer">
     <section>
-        <div class="container mt-5">
-            <h4 class="text-uppercase text-left mb-4 ml-1 d-4">Portfolio</h4>
+            <h4 class="text-uppercase text-left mb-4 ml-1 d-4 portfolioTitle">Portfolio</h4>
             <hr>
             <div class="row mt-4">
                 <!-- -------------------------- QUEEN STREET MARKET -------------------------- -->
                 <div class="col-12 col-md-4">
-                    <div class="card mb-2">
-                        <img class="card-img-top mt-4 mb-4" src="./assets/images/project imgs/qsm.jpg" alt="Queen St. Market">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="./assets/images/project imgs/qsm.jpg" alt="Queen St. Market">
                         <div class="card-body">
                             <a class="card-title qsmTitle" href="https://damp-mountain-00831.herokuapp.com/"
                                 target="_blank">Online Store</a>
@@ -71,13 +76,13 @@
                 </div>
                 <!-- -------------------------- ZOOTOPIA -------------------------- -->
                 <div class="col-12 col-md-4">
-                    <div class="card mb-2">
+                    <div class="card mb-3">
                         <img class="card-img-top" src="./assets/images/project imgs/zoo.jpg" alt="Zootopia">
                         <div class="card-body">
                             <a class="card-title houseTitle" href="https://jenkruk.github.io/zootopia/"
                                 target="_blank">Zootopia</a>
                             <hr>
-                            <p class="card-text">A matching game made using React, JSX, ES6, uifx and Bootstrap. <br><br>How far can you go before your memory fails you?</p>
+                            <p class="card-text">A matching game made using React, JSX, ES6, uifx and Bootstrap. <br><br>How many zoo cards can you click before your memory fails you?</p>
                             <br><br>
                             <a class="repoLink" href="https://github.com/jenkruk/zootopia" target="_blank">Github Repo</a>
                         </div>
@@ -85,30 +90,27 @@
                 </div>
                 <!-- -------------------------- GOOGLE BOOKS -------------------------- -->
                 <div class="col-12 col-md-4">
-                    <div class="card mb-2">
-                        <img class="card-img-top mb-2" src="./assets/images/project imgs/googleBooks.jpg" alt="Google Books Search">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="./assets/images/project imgs/googleBooks.jpg" alt="Google Books Search">
                         <div class="card-body">
                             <a class="card-title booksTitle" href="https://google-books-search-171113.herokuapp.com/"
-                                target="_blank">Google Books Search</a>
+                                target="_blank">Google Books</a>
                             <hr>
-                            <p class="card-text"> A collaberation project utilizing Axios to call the Google Books API. </p> 
-                            <p class="card-text">Also utilizes React, Express, MongoDB, Mongoose and Bootstrap. </p>
+                            <p class="card-text"> A collaberation project utilizing Axios to call the Google Books API. <br> <br> Also utilizes React, Express, MongoDB, Mongoose and Bootstrap. </p>
                             <br><br>
                             <a class="repoLink" href="https://github.com/SaraNP-33/googleBooks" target="_blank">Github Repo</a>
                         </div>
                     </div>
                 </div> 
             </div> <!-- end row -->
-        </div> <!-- end container -->
     </section>
 
     <section>
-        <div class="container mt-3">
             <div class="row">
                 <!-- -------------------------- SCRAPER -------------------------- -->
                 <div class="col-12 col-md-4">
-                    <div class="card mb-2">
-                        <img class="card-img-top mt-5 mb-4" src="https://i1.wp.com/www.foodrepublic.com/wp-content/uploads/2013/08/PicMonkey-Collage.jpg?resize=1920%2C%20560&ssl=1" alt="Real Simple Recipe Scraper">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="./assets/images/project imgs/recipe.jpg" alt="Real Simple Recipe Scraper">
                         <div class="card-body">
                             <a class="card-title scraperTitle" href="https://realsimplerecipescraper.herokuapp.com/"
                                 target="_blank">Recipe Scraper</a>
@@ -123,8 +125,8 @@
                 </div>
                 <!-- -------------------------- FRIEND FINDER -------------------------- -->
                 <div class="col-12 col-md-4">
-                    <div class="card mb-2">
-                        <img class="card-img-top mt-4 mb-3" src="./assets/images/project imgs/friendFinder.jpg" alt="Friend Finder">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="./assets/images/project imgs/friendFinder.jpg" alt="Friend Finder">
                         <div class="card-body">
                             <a class="card-title friendTitle" href="https://damp-mountain-00831.herokuapp.com/"
                                 target="_blank">Friend Finder</a>
@@ -139,22 +141,23 @@
                 </div>
                 <!-- -------------------------- TASK MANAGER -------------------------- -->
                 <div class="col-12 col-md-4">
-                    <div class="card mb-2">
-                        <img class="card-img-top mt-3 mb-1" src="./assets/images/project imgs/taskMgr.jpg" alt="Task Manager">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="./assets/images/project imgs/taskMgr.jpg" alt="Task Manager">
                         <div class="card-body">
                             <a class="card-title taskTitle" href="https://quiet-bayou-82536.herokuapp.com/"
                                 target="_blank">Task Manager</a>
                             <hr>
                             <p class="card-text">A to-do list made with Sequelize, Node, Express, Handlebars, jQuery, javaScript and Bootstrap.
                                 <br><br>
-                                Keep your life on track with this helpful list!</p>
+                                Keep on track with this helpful list!</p>
+                                <br><br>
                                 <a class="repoLink" href="https://github.com/jenkruk/taskManagerSequel" target="_blank">Github Repo</a>
                         </div>
                     </div>
                 </div>
                 <!-- -------------------------- NODE CLI's -------------------------- -->
                 <!-- <div class="col-12 col-md-4">
-                    <div class="card mb-2">
+                    <div class="card mb-3">
                         <div class="card-body py-4">
                             <div class="cli row text-center">
                                 <p class = "pt-3 col-12"><a class="cli" href="https://github.com/jenkruk/constructor-word-guess" target="_blank">Constructor Word Guess</a></p>
@@ -171,15 +174,13 @@
                     </div>
                 </div> -->
             </div> <!-- end row -->
-        </div> <!-- end container -->
     </section>
         
-    <section class="py-3">
-        <div class="container">
+    <section>
             <div class="row">
             <!-- -------------------------- TRAIN-SCHEDULER -------------------------- -->
             <div class="col-12 col-md-4">
-                <div class="card mb-2">
+                <div class="card mb-3">
                     <div class="clock">
                         <div id="hours"></div>:
                         <div id="minutes"></div>:
@@ -188,7 +189,9 @@
                     <div class="card-body">
                         <a class="card-title" href="https://jenkruk.github.io/TrainSchedule/">Train Scheduler</a>
                         <hr>
-                        <p class="card-text">A train scheduler utilizing Momentjs, Firebase, jQuery & javaScript timing events. All Aboard!</p>
+                        <p class="card-text">A train scheduler utilizing Momentjs, Firebase, jQuery & javaScript timing events. 
+                            <br><br>All Aboard!</p>
+                            <br><br>
                         <a class="repoLink" href="https://github.com/jenkruk/TrainSchedule" target="_blank">Github Repo</a>
                     </div>
                 </div>
@@ -196,45 +199,48 @@
         
             <!-- -------------------------- REAL-ESTATE -------------------------- -->
             <div class="col-12 col-md-4">
-                <div class="card mb-2">
-                    <img class="card-img-top homes my-5 mx-auto pb-2" style="width: 80%;" src="./assets/images/project imgs/homes.jpg" alt="Homes">
+                <div class="card mb-3">
+                    <img class="card-img-top homes" src="./assets/images/project imgs/homes.jpg" alt="Homes">
                     <div class="card-body">
                         <a class="card-title houseTitle" href="https://hishamss.github.io/Project1-Real-Estate/" target="_blank">Find Your Way Home</a>
                         <hr>
-                        <p class="card-text">A collaberation real-estate site utilizing API's from Realtor.com, Google Maps, Yelp & OpenWeather.</p>
+                        <p class="card-text">A collaberation real-estate site utilizing API's from Realtor.com, Google Maps, Yelp & OpenWeather.
+                            <br><br> Find your new home today!</p>
+                        <br><br>
                         <a class="repoLink" href="https://github.com/hishamss/Project1-Real-Estate/graphs/contributors" target="_blank">Github Repo</a>
                     </div>
                 </div>
             </div>
             <!-- -------------------------- GIF-GIVER -------------------------- -->
             <div class="col-12 col-md-4">
-                <div class="card mb-2">
-                    <img class="card-img-top giftStack" style="width: 150px; height: 200px; margin: 0 auto" src="./assets/images/project imgs/giftStack.gif" alt="Gifts"></img>
+                <div class="card mb-3">
+                    <img class="card-img-top giftStack mb-4" style="width: 110px; height: 168px; margin: 0 auto" src="./assets/images/project imgs/giftStack.gif" alt="Gifts"></img>
                     <div class="card-body">
                         <a class="card-title gifTitle" href="https://jenkruk.github.io/Gif-Giver/"
                             target="_blank"> Gif-Giver </a>
                         <hr>
-                        <p class="card-text"> A gif generator utilizing the Giphy API, Bootstrap & the jQuery javaScript library. Enjoy the gifs!</p>
+                        <p class="card-text"> An interactive gif generator utilizing the Giphy API, Bootstrap & the jQuery javaScript library. 
+                            <br> <br>Enjoy the gifs!</p>
+                        <br><br>
                         <a class="repoLink" href="https://jenkruk.github.io/Gif-Giver/" target="_blank">Github Repo</a>
                     </div>
                 </div>
             </div>
         </div> <!-- end row -->
-        </div> <!-- end container -->
     </section>
 
     <section>
-        <div class="container pb-5">
             <div class="row">
                 <!-- -------------------------- TRAVEL TRIVIA -------------------------- -->
                 <div class="col-12 col-md-4">
-                    <div class="card mb-2">
+                    <div class="card mb-3">
                         <img class="card-img-top" src="./assets/images/project imgs/travelTrivia.jpg" alt="Travel Trivia">
                         <div class="card-body">
                             <a class="card-title travelTitle" href="https://jenkruk.github.io/TriviaGame/"
                                 target="_blank">Travel Trivia</a>
                             <hr>
                             <p class="card-text">A travel quiz made with the jQuery javaScript library and Bootstrap.
+                                <br><br>
                                 Show off your world knowledge before the timer runs out!</p>
                                 <a class="repoLink" href="https://github.com/jenkruk/TriviaGame" target="_blank">Github Repo</a>
                         </div>
@@ -242,14 +248,14 @@
                 </div>
                 <!-- -------------------------- CRYSTAL COLLECTOR -------------------------- -->
                 <div class="col-12 col-md-4">
-                    <div class="card mb-2">
+                    <div class="card mb-3">
                         <img class="card-img-top" src="./assets/images/project imgs/crystals.jpg" alt="Crystal Collector">
                         <div class="card-body">
                             <a class="card-title crystalTitle" href="https://jenkruk.github.io/unit-4-game/"
                                 target="_blank">Crystal Collector</a>
                             <hr>
                             <p class="card-text">A numbers game made with the jQuery javaScript library and Bootstrap.
-                                <br>
+                                <br><br>
                                 Collect the correct amount of crystals without going over!</p>
                                 <a class="repoLink" href="https://github.com/jenkruk/unit-4-game" target="_blank">Github Repo</a>
                         </div>
@@ -257,7 +263,7 @@
                 </div>
                 <!-- -------------------------- TREE OF LIVES -------------------------- -->
                 <div class="col-12 col-md-4">
-                    <div class="card mb-2">
+                    <div class="card mb-3">
                         <img class="card-img-top" src="./assets/images/project imgs/treeOfLives.jpg"
                             alt="Tree of Lives">
                         <div class="card-body">
@@ -265,22 +271,19 @@
                                 target="_blank">Tree of Lives</a>
                             <hr>
                             <p class="card-text">A word guessing game made with vanilla javaScript and Bootstrap.
-                                <br>
+                                <br><br>
                                 Can you guess the word before the tree runs out of lives?!</p>
                                 <a class="repoLink" href="https://github.com/jenkruk/Word-Guess-Game" target="_blank">Github Repo</a>
                         </div>
                     </div>
                 </div>
             </div> <!-- end row -->
-        </div> <!-- end container -->
     </section>
+    </div> <!-- end container -->
 
     <!-- --------------------- FOOTER --------------------- -->
-    </div>
-    <footer id="sticky-footer" class="fixed-bottom pt-4 pb-2 bg-dkbluegray text-white-50">
-        <div class="container text-center">
-            <small>Copyright &copy; 2020</small>
-        </div>
+    <footer id="sticky-footer" class="fixed-bottom text-center pt-3 pb-3 bg-dkbluegray text-white-50">
+        <p>Copyright &copy; 2020</p>
     </footer>
 
     <!--JS, Popper.js, and jQuery-->

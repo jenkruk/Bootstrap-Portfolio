@@ -1,0 +1,210 @@
+/* PORTFOLIO PAGE */
+.card-title {
+    color: #88a2ad;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.row .card-title:hover {
+    border: 1px solid #88a2ad;
+    text-decoration: none;
+    color: #88a2ad;
+    font-size: 17px !important;
+}
+
+.card-text {
+    color: grey;
+    padding-left: 5px;
+}
+
+.card-img-top {
+    padding-top: 20px;
+}
+
+.card-body {
+    padding: 10px 20px 20px 20px !important;
+}
+
+/* GIPH  */
+
+
+
+
+/* CARD TITLES  */
+
+.booksTitle {
+    color: #ff903f;
+}
+
+.booksTitle:hover {
+    color: #ff903f !important;
+    border: 1px solid #ff903f !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.scraperTitle {
+    color: #78B244;
+}
+
+.scraperTitle:hover {
+    color: #78B244 !important;
+    border: 1px solid #78B244 !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.friendTitle {
+    color: #FFC10B;
+}
+
+.friendTitle:hover {
+    color: #FFC10B !important;
+    border: 1px solid #FFC10B !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.taskTitle {
+    color: #52abd5;
+}
+
+.taskTitle:hover {
+    color: #52abd5 !important;
+    border: 1px solid #52abd5 !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.treeTitle {
+    color: #00aa23;
+}
+
+.treeTitle:hover {
+    color: #00aa23 !important;
+    border: 1px solid #00aa23 !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.crystalTitle {
+    color: #FFC10B;
+}
+
+.crystalTitle:hover {
+    color: #FFC10B !important;
+    border: 1px solid #FFC10B !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.travelTitle {
+    color: #0eabd6;
+}
+
+.travelTitle:hover {
+    color: #0eabd6 !important;
+    border: 1px solid #0eabd6 !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.gifTitle {
+    color: #ff7007;
+}
+
+.gifTitle:hover {
+    color: #ff7007 !important;
+    border: 1px solid #ff7007 !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.houseTitle {
+    color: #9B6397;
+}
+
+.houseTitle:hover {
+    color: #9B6397 !important;
+    border: 1px solid #9B6397 !important;
+    text-decoration: none;
+    font-size: 17px !important;
+}
+
+.cli {
+    color: #88a2ad;
+}
+
+.cliTitle {
+    color: #0eabd6;
+}
+
+.cliTitle:hover{
+    color: #0eabd6 !important;
+    text-decoration: none !important;
+    border: none !important;
+    font-size: .4rem !important;
+}
+
+/* CLOCK FOR TRAIN SCHEDULER / PORTFOLIO PAGE */
+.clock {
+    color: #657780;
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+}
+
+.clock div::after {
+    display: block;
+    font-size: .2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#hours::after {
+    content: "hours";
+}
+
+#minutes::after {
+    content: "minutes";
+}
+
+#seconds::after {
+    content: "seconds";
+}
+
+.clock .hide {
+    position: absolute;
+    transform-origin: 50% 0;
+    animation: hide .5s ease-in-out forwards;
+}
+
+@keyframes hide {
+    0% {
+        transform: scale(1,1) translateY(0);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.clock .show {
+    transform-origin: 50% 0;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

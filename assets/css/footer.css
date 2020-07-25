@@ -1,0 +1,8 @@
+/* FOOTER */
+#sticky-footer {
+    background-color: #7D8E9E;
+    height: 50px;
+    position: fixed;
+    margin: auto;
+    width: 100%;
+}
