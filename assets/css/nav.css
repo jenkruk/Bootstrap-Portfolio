@@ -156,6 +156,12 @@ body {
     margin-top: 14vh !important;
     margin-bottom: 0 !important;
     }
+
+    .navbar-nav {
+        width: 80% !important;
+    }
+
+
 }
 
 @media (min-width: 812px) and (min-height: 375px) {
@@ -165,6 +171,7 @@ body {
     margin-top: 30vh !important;
     margin-bottom: 10vh !important;
     }
+
 }
 
 @media (min-width: 1024px) and (min-height: 768px) {
@@ -174,6 +181,7 @@ body {
     margin-top: 18vh !important;
     padding-bottom: 0vh !important;
 }
+
 }
 
 @media (min-width: 1024px) and (min-height: 1366px) {
@@ -181,6 +189,19 @@ body {
     .portfolioContainer,
     .contactContainer {
     margin-top: 15vh !important;
+    padding-bottom: 5vh !important;
+}
+}
+
+@media (min-width: 751px) and (max-width: 768px){
+    .navbar-nav {
+        min-width: 80% !important;
+    }
+
+    .aboutContainer,
+    .portfolioContainer,
+    .contactContainer {
+    margin-top: 5vh !important;
     padding-bottom: 5vh !important;
 }
 }
