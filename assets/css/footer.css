@@ -6,3 +6,10 @@
     margin: auto;
     width: 100%;
 }
+
+@media (max-height: 320px) {
+    #sticky-footer {
+        display: none;
+    }
+
+}
