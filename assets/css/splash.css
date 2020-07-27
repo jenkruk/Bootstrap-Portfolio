@@ -46,6 +46,8 @@
     margin-top: -56px !important;
 }
 
+/* MEDIA QUERIES FOR SPLASH PAGE ONLY  */
+
 @media (max-width: 450px) {
 
     .splashImage {

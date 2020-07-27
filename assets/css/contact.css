@@ -34,6 +34,8 @@ form {
     color: #88A2AD;
 }
 
+/* MEDIA QUERIES FOR CONTACT PAGE ONLY  */
+
 /* Earth Graphic - media query for screens 980 and less for desktops */
 @media (min-width: 1200px)  {
     .earth {
