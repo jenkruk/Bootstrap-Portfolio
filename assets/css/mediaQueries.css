@@ -381,3 +381,26 @@ section {
 }
 
 }
+
+@media (width: 280px) and (height: 653px) {
+    
+    body{
+        min-width: 280px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .portfolioContainer {
+        min-width: 90vw;
+        margin-left: 10vw !important; 
+    }
+
+}
+
+@media (min-width: 832px) and (max-width: 1023px) and (min-height: 654px) {
+    
+    h4 {
+        padding-top: 10vh;
+    }
+
+}
