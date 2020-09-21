@@ -12,3 +12,12 @@
     -ms-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
 }
+
+.kyle {
+    font-size: .75rem;
+    color: rgb(177, 175, 175);
+}
+
+.about {
+    font-size: .97rem;
+}
