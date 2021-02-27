@@ -4,7 +4,7 @@
 #bio-image {
     border-radius: 10%;
     transition: transform .8s ease-in-out;
-    display: inline;
+    /* display: inline; */
 }
 
 #bio-image:hover {
